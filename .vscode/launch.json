@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug TypeScript",
+        "runtimeArgs": ["-r", "ts-node/register"], // Use ts-node for running TypeScript directly
+        "args": ["${workspaceFolder}/t.ts"], // Specify your TypeScript file here
+        "sourceMaps": true,
+        "cwd": "${workspaceFolder}",
+        "protocol": "inspector"
+      }
+    ]
+  }
+  
